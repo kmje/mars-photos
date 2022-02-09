@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mars Photos</title>
 </head>
+
 <body>
-    
+    <h1>Mars Photo API</h1>
+    <form action="">
+        <h2>Curiosity</h2>
+        <p>
+            <label for="mars-solar-days">
+                <span>Sol (Mars Solar Day)</span>
+            </label>
+            <input type="number" name="solar-days" id="sol" min="0" max="1000">
+        </p>
+        <p>
+            <label for="camera">
+                <span>Camera</span>
+            </label>
+            <select name="rover-camera" id="camera">
+                <option value="FAHZ">FAHZ</option>
+                <option value="RHAZ">RAHZ</option>
+                <option value="MAST">MAST</option>
+                <option value="CHEMCAM">CHEMCAM</option>
+                <option value="MAHLI">MAHLI</option>
+                <option value="MARDI">MARDI</option>
+                <option value="NAVCAM">NAVCAM</option>
+            </select>
+        </p>
+        <section>
+            <p>
+                <button type="submit">Find Photos</button>
+            </p>
+        </section>
+    </form>
+
 </body>
+
 </html>
