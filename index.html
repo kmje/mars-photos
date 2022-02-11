@@ -10,7 +10,7 @@
 
 <body>
     <h1>Mars Photo API</h1>
-    <form action="">
+    <div class="photo-search-form">
         <h2>Curiosity</h2>
         <p>
             <label for="mars-solar-days">
@@ -32,13 +32,14 @@
                 <option value="NAVCAM">NAVCAM</option>
             </select>
         </p>
-        <section>
-            <p>
-                <button type="submit">Find Photos</button>
-            </p>
-        </section>
-    </form>
 
+        <p>
+            <button type="submit" class="submit-btn">Find Photos</button>
+        </p>
+
+    </div>
+    <div class="picture-results"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
